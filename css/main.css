@@ -1,0 +1,114 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 10fr 1fr;
+  height: 100vh;
+  background-image: url("../images/yellow.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.header {
+  /* position absolute places the element in a fixed position*/
+
+  grid-column: 1/3;
+  grid-row: 1/2;
+  display: flex;
+  justify-content: space-between;
+}
+
+#link-wrapper {
+  margin: 2rem;
+}
+
+a {
+  color: rgb(87, 28, 110);
+  text-decoration: none;
+  margin-right: 1rem;
+}
+
+a:hover {
+  cursor: pointer;
+  color: rgb(230, 243, 54);
+}
+
+#logo-wrapper {
+  padding-top: 1rem;
+  margin: 1rem;
+  color: rgb(87, 28, 110);
+  font-size: 1rem;
+  font-weight:bold;
+}
+
+.hero {
+  grid-column: 1/3;
+  grid-row: 2/8;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+
+#login-wrapper {
+  margin-top: 5rem;
+  padding-bottom: 2rem;
+ grid-column: 2/3;
+ grid-row: 1/2;
+  transform: (-50%, -50%);
+  box-sizing: border-box;
+  box-shadow: 2rem 2rem 4rem rgb(36, 33, 33);
+  display: inline-block;
+  justify-content: center;
+}
+
+input[type="email"],
+input[type="password"] {
+  width: 80%;
+  padding: 0.8rem;
+  margin: 1rem;
+  margin-left: 2rem;
+  display: inline-block;
+  box-sizing: border-box;
+  background: rgba(240, 192, 240, 0.3);
+  
+}
+
+button {
+ padding: 0.5rem;
+  margin-right: 5rem;
+  border: solid 3px rgb(87, 28, 110);
+  cursor: pointer;
+  width: 20%;
+  float: right;
+  background-color: rgba(240, 192, 240, 0.5);
+}
+
+label {
+  color: rgb(250, 234, 234);
+  margin: 2rem;
+}
+
+#login-wrapper h3 {
+
+  text-align: center;
+  color: rgb(87, 28, 110);
+  font-size: 1.5rem;
+  padding-bottom: 2rem;
+  padding-top: 1rem;
+}
+
+.footer {
+  grid-row: 8/9;
+}
+
+.about-container {
+  height: 100vh;
+  background-image: url("../images/people.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
