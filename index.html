@@ -23,14 +23,17 @@
         
           <div id="login-wrapper">
             <h3>SIGN IN</h3>
-            <form action="about.html" id="signInForm">
+            <form  id="sign-in-form" action = "users.html">
+              <div>
             <label for="email"><b>Email</b></label>
-            <input type="email" placeholder="Enter email" id="email" required>
+            <input type="email" placeholder="Enter email" id="sign-in-mail" required>
         
+          </div>
+        <div>
             <label for="psw"><b>Password</b></label>
             <input type="password" placeholder="Enter password" id="password" required>
-        
-            <button type="submit" id = "submitBtn">Login</button>
+          </div>
+            <button id="submit-btn">Login</button>
           </form>
           </div>
        
@@ -42,5 +45,7 @@
         <div id="mapWapper"></div>
       </footer>
     </div>
+
+    <script src="./javascript/index.js"></script>
   </body>
 </html>
